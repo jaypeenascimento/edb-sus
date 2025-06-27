@@ -63,6 +63,6 @@ Abaixo está a descrição de cada pasta:
 - data/
   - Contém os arquivos de dados utilizados pelo projeto.
   - in/
-    É onde pode-se encontrar os dados de entrada do programa.
+    - É onde pode-se encontrar os dados de entrada do programa.
   - out/
-    É onde ficam os logs salvos em disco de saída do programa.
+    - É onde ficam os logs salvos em disco de saída do programa.
