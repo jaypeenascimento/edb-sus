@@ -1,0 +1,52 @@
+[INFO] Iniciando o carregamento dos pacientes...
+Paciente inserido: [ID: PAC001, Nome: Sophie Peixoto, Idade: 50, Sexo: F, CPF: 04732658938, Prioridade: 1, Atendido: 0] no índice 7
+Paciente inserido: [ID: PAC002, Nome: Beatriz Gomes, Idade: 34, Sexo: F, CPF: 21475683090, Prioridade: 4, Atendido: 0] no índice 8
+Paciente inserido: [ID: PAC003, Nome: Nina Melo, Idade: 39, Sexo: F, CPF: 78123694555, Prioridade: 3, Atendido: 0] no índice 9
+Paciente inserido: [ID: PAC004, Nome: Manuela Ferreira, Idade: 75, Sexo: F, CPF: 08975362159, Prioridade: 5, Atendido: 0] no índice 10
+Paciente inserido: [ID: PAC005, Nome: Thomas Martins, Idade: 18, Sexo: M, CPF: 13896470213, Prioridade: 2, Atendido: 0] no índice 11
+Paciente inserido: [ID: PAC006, Nome: Calebe Jesus, Idade: 97, Sexo: M, CPF: 84192675382, Prioridade: 5, Atendido: 0] no índice 12
+Paciente inserido: [ID: PAC007, Nome: Ana Laura Nogueira, Idade: 33, Sexo: F, CPF: 53416902734, Prioridade: 3, Atendido: 0] no índice 13
+Paciente inserido: [ID: PAC008, Nome: Ana Clara Carvalho, Idade: 13, Sexo: F, CPF: 29067438103, Prioridade: 3, Atendido: 0] no índice 14
+Paciente inserido: [ID: PAC009, Nome: Eduarda da Rosa, Idade: 61, Sexo: F, CPF: 96438201570, Prioridade: 3, Atendido: 0] no índice 15
+Paciente inserido: [ID: PAC010, Nome: Maria Sophia Melo, Idade: 56, Sexo: F, CPF: 39052718423, Prioridade: 5, Atendido: 0] no índice 37
+Paciente inserido: [ID: PAC011, Nome: Benício Castro, Idade: 82, Sexo: M, CPF: 23064578910, Prioridade: 5, Atendido: 0] no índice 38
+Paciente inserido: [ID: PAC012, Nome: Caroline Costa, Idade: 62, Sexo: F, CPF: 61590743261, Prioridade: 5, Atendido: 0] no índice 39
+Paciente inserido: [ID: PAC013, Nome: Luana da Rocha, Idade: 34, Sexo: F, CPF: 09648253765, Prioridade: 5, Atendido: 0] no índice 40
+Paciente inserido: [ID: PAC014, Nome: Fernanda Monteiro, Idade: 2, Sexo: F, CPF: 62043798103, Prioridade: 4, Atendido: 0] no índice 41
+Paciente inserido: [ID: PAC015, Nome: Francisco Moraes, Idade: 91, Sexo: M, CPF: 72360149822, Prioridade: 5, Atendido: 0] no índice 42
+Paciente inserido: [ID: PAC016, Nome: Noah Pires, Idade: 64, Sexo: M, CPF: 20753496143, Prioridade: 2, Atendido: 0] no índice 43
+Paciente inserido: [ID: PAC017, Nome: Mirella Fernandes, Idade: 94, Sexo: F, CPF: 28035796429, Prioridade: 1, Atendido: 0] no índice 44
+Paciente inserido: [ID: PAC018, Nome: Emilly Cunha, Idade: 25, Sexo: F, CPF: 37542816900, Prioridade: 2, Atendido: 0] no índice 45
+Paciente inserido: [ID: PAC019, Nome: Sofia Peixoto, Idade: 19, Sexo: F, CPF: 10352948779, Prioridade: 1, Atendido: 0] no índice 46
+Paciente inserido: [ID: PAC020, Nome: Rafaela Peixoto, Idade: 11, Sexo: F, CPF: 06875913410, Prioridade: 5, Atendido: 0] no índice 18
+Paciente inserido: [ID: PAC021, Nome: Samuel da Cruz, Idade: 63, Sexo: M, CPF: 78946051230, Prioridade: 3, Atendido: 0] no índice 19
+Paciente inserido: [ID: PAC022, Nome: Lucas Gabriel Barros, Idade: 71, Sexo: M, CPF: 63195704234, Prioridade: 1, Atendido: 0] no índice 20
+Paciente inserido: [ID: PAC023, Nome: Enrico Alves, Idade: 71, Sexo: M, CPF: 08179463222, Prioridade: 5, Atendido: 0] no índice 21
+Paciente inserido: [ID: PAC024, Nome: Ana Luiza Ribeiro, Idade: 27, Sexo: F, CPF: 61023794896, Prioridade: 4, Atendido: 0] no índice 22
+Paciente inserido: [ID: PAC025, Nome: Davi Lucas Freitas, Idade: 12, Sexo: M, CPF: 09815246720, Prioridade: 3, Atendido: 0] no índice 23
+Paciente inserido: [ID: PAC026, Nome: Maria Sales, Idade: 74, Sexo: F, CPF: 76584193209, Prioridade: 3, Atendido: 0] no índice 24
+Paciente inserido: [ID: PAC027, Nome: Daniel da Costa, Idade: 24, Sexo: M, CPF: 45862073965, Prioridade: 2, Atendido: 0] no índice 25
+Paciente inserido: [ID: PAC028, Nome: Gabriel da Cruz, Idade: 5, Sexo: M, CPF: 24538190705, Prioridade: 4, Atendido: 0] no índice 26
+Paciente inserido: [ID: PAC029, Nome: Ana Beatriz Lima, Idade: 9, Sexo: F, CPF: 28193647050, Prioridade: 2, Atendido: 0] no índice 27
+Paciente inserido: [ID: PAC030, Nome: Matheus Rocha, Idade: 20, Sexo: M, CPF: 75803691410, Prioridade: 1, Atendido: 0] no índice 49
+Paciente inserido: [ID: PAC031, Nome: Isaac da Costa, Idade: 90, Sexo: M, CPF: 26108745371, Prioridade: 5, Atendido: 0] no índice 0
+Paciente inserido: [ID: PAC032, Nome: Caio Novaes, Idade: 36, Sexo: M, CPF: 89436715048, Prioridade: 2, Atendido: 0] no índice 1
+Paciente inserido: [ID: PAC033, Nome: Francisco da Cunha, Idade: 87, Sexo: M, CPF: 63509782429, Prioridade: 5, Atendido: 0] no índice 2
+Paciente inserido: [ID: PAC034, Nome: Luiz Felipe Novaes, Idade: 36, Sexo: M, CPF: 43061957243, Prioridade: 4, Atendido: 0] no índice 3
+Paciente inserido: [ID: PAC035, Nome: Isis Moreira, Idade: 85, Sexo: F, CPF: 82143759673, Prioridade: 1, Atendido: 0] no índice 4
+Paciente inserido: [ID: PAC036, Nome: Luna Martins, Idade: 42, Sexo: F, CPF: 79346105216, Prioridade: 4, Atendido: 0] no índice 5
+Paciente inserido: [ID: PAC037, Nome: Luiz Miguel da Conceição, Idade: 76, Sexo: M, CPF: 42698307510, Prioridade: 2, Atendido: 0] no índice 6
+Paciente inserido: [ID: PAC038, Nome: Enzo Gabriel Costela, Idade: 32, Sexo: M, CPF: 04963217570, Prioridade: 3, Atendido: 0] no índice 16
+Paciente inserido: [ID: PAC039, Nome: Luiz Miguel Santos, Idade: 15, Sexo: M, CPF: 01853726435, Prioridade: 3, Atendido: 0] no índice 17
+Paciente inserido: [ID: PAC040, Nome: Vitória Nogueira, Idade: 22, Sexo: F, CPF: 93057128432, Prioridade: 4, Atendido: 0] no índice 30
+Paciente inserido: [ID: PAC041, Nome: Luiz Felipe Ferreira, Idade: 8, Sexo: M, CPF: 46873012904, Prioridade: 2, Atendido: 0] no índice 31
+Paciente inserido: [ID: PAC042, Nome: Gustavo Henrique Melo, Idade: 90, Sexo: M, CPF: 09731682422, Prioridade: 1, Atendido: 0] no índice 32
+Paciente inserido: [ID: PAC043, Nome: Arthur Rezende, Idade: 74, Sexo: M, CPF: 67083195277, Prioridade: 1, Atendido: 0] no índice 33
+Paciente inserido: [ID: PAC044, Nome: Giovanna Cavalcanti, Idade: 16, Sexo: F, CPF: 85376042162, Prioridade: 5, Atendido: 0] no índice 34
+Paciente inserido: [ID: PAC045, Nome: Marina Mendes, Idade: 74, Sexo: F, CPF: 14237098613, Prioridade: 4, Atendido: 0] no índice 35
+Paciente inserido: [ID: PAC046, Nome: Isadora da Mota, Idade: 12, Sexo: F, CPF: 75106328462, Prioridade: 1, Atendido: 0] no índice 36
+Paciente inserido: [ID: PAC047, Nome: Bryan Santos, Idade: 5, Sexo: M, CPF: 86401379278, Prioridade: 2, Atendido: 0] no índice 47
+Paciente inserido: [ID: PAC048, Nome: Ana Clara Castro, Idade: 24, Sexo: F, CPF: 62093547180, Prioridade: 4, Atendido: 0] no índice 48
+Paciente inserido: [ID: PAC049, Nome: Bruno Moraes, Idade: 27, Sexo: M, CPF: 19570246316, Prioridade: 1, Atendido: 0] no índice 28
+Paciente inserido: [ID: PAC050, Nome: João Guilherme Cardoso, Idade: 70, Sexo: M, CPF: 92301645851, Prioridade: 5, Atendido: 0] no índice 29
+[INFO] Carregamento dos pacientes finalizado.
