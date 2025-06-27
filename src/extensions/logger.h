@@ -1,12 +1,12 @@
 #ifndef LOGGER_H
 #define LOGGER_H
 
-#include <stdio.h>
 #include "../structures/hashmap.h"
+#include <stdio.h>
 
-FILE* openLogFile(const char *filename);
-void closeLogFile(FILE *logFile);
+FILE *openLogFile(const char *filename);
+void closeLogFile();
 void logPatientInfoList(InfoNode *head, int index, FILE *logFile);
-void logMessage(FILE *logFile, const char *format, ...);
+void logMessage(const char *format, ...);
 
 #endif

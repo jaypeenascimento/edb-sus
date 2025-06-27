@@ -1,9 +1,9 @@
 #ifndef FILEREADER_H
 #define FILEREADER_H
 
-#include <stdio.h>
 #include "../structures/hashmap.h"
+#include <stdio.h>
 
-void loadPatients(HashTable *hashTable, const char *filename, FILE *logFile);
+void loadPatients(HashTable *hashTable, const char *filename);
 
 #endif
