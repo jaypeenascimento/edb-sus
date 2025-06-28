@@ -3,10 +3,9 @@
 #include "src/structures/hashmap.h"
 
 int main() {
-  HashTable hashTable;
-  initializeTable(&hashTable);
+  HashMap *hashmap = hashmap_create();
 
-  loadPatients(&hashTable, "./data/in/pacientes.csv");
+  loadPatients(hashmap, "./data/in/pacientes.csv");
 
   closeLogFile();
   return 0;

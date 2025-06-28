@@ -4,6 +4,6 @@
 #include "../structures/hashmap.h"
 #include <stdio.h>
 
-void loadPatients(HashTable *hashTable, const char *filename);
+void loadPatients(HashMap *hashTable, const char *filename);
 
 #endif

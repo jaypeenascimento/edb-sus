@@ -1,76 +1,79 @@
 #include "hashmap.h"
-
-#include <stdio.h>
+#include "linkedlist.h"
 #include <stdlib.h>
 #include <string.h>
 
-#include "../extensions/logger.h"
-
-void initializeTable(HashMap *hashTable) {
-  for (int i = 0; i < TABLE_SIZE; i++) {
-    hashTable->table[i] = NULL;
-  }
+HashMap *hashmap_create() {
+  HashMap *hashmap = (HashMap *)malloc(sizeof(HashMap));
+  return hashmap;
 }
 
-int hashFunction(const char *id) {
+HashMapValue *hashmap_create_value(char *key, void *data) {
+  HashMapValue *value = (HashMapValue *)malloc(sizeof(HashMapValue));
+  value->key = key;
+  value->data = data;
+  return value;
+}
+
+int hash(const char *key) {
   unsigned int h = 0;
-  while (*id)
-    h = (h * 31) + *id++;
+  while (*key)
+    h = (h * 31) + *key++;
   return h % TABLE_SIZE;
 }
 
-void insertPatient(HashMap *hashTable, char *id, char *name, int age,
-                   char gender, char *cpf, int priority, int attended) {
-  int index = hashFunction(id);
-  int startIndex = index;
+void hashmap_free(HashMap *hashmap) {
+  if (hashmap == NULL) {
+    return;
+  }
 
-  while (hashTable->table[index] != NULL) {
-    index = (index + 1) % TABLE_SIZE;
-    if (index == startIndex) {
-      logMessage(
-          "[ERROR] Tabela hash cheia, não foi possível inserir o paciente %s",
-          id);
-      return;
+  for (int i = 0; i < TABLE_SIZE; i++) {
+    LinkedList *list = hashmap->data[i];
+
+    if (list != NULL) {
+      LinkedListNode *curr = list->head;
+      while (curr) {
+        free(curr->data);
+        curr = curr->next;
+      }
+
+      linkedlist_free(list);
     }
   }
 
-  InfoNode *idNode = malloc(sizeof(InfoNode));
-  strncpy(idNode->info, id, sizeof(idNode->info) - 1);
-  idNode->info[sizeof(idNode->info) - 1] = '\0';
+  free(hashmap);
+}
 
-  InfoNode *nameNode = malloc(sizeof(InfoNode));
-  strncpy(nameNode->info, name, sizeof(nameNode->info) - 1);
-  nameNode->info[sizeof(nameNode->info) - 1] = '\0';
+void hashmap_insert(HashMap *hashmap, char *key, void *data) {
+  int idx = hash(key);
 
-  InfoNode *ageNode = malloc(sizeof(InfoNode));
-  snprintf(ageNode->info, sizeof(ageNode->info), "%d", age);
+  LinkedList *list = hashmap->data[idx];
+  if (list == NULL) {
+    list = linkedlist_create();
+    hashmap->data[idx] = list;
+  }
 
-  InfoNode *genderNode = malloc(sizeof(InfoNode));
-  genderNode->info[0] = gender;
-  genderNode->info[1] = '\0';
+  HashMapValue *value = hashmap_create_value(key, data);
+  linkedlist_append(list, value);
+}
 
-  InfoNode *cpfNode = malloc(sizeof(InfoNode));
-  strncpy(cpfNode->info, cpf, sizeof(cpfNode->info) - 1);
-  cpfNode->info[sizeof(cpfNode->info) - 1] = '\0';
+void *hashmap_fetch(HashMap *hashmap, char *key) {
+  int idx = hash(key);
+  LinkedList *list = hashmap->data[idx];
 
-  InfoNode *priorityNode = malloc(sizeof(InfoNode));
-  snprintf(priorityNode->info, sizeof(priorityNode->info), "%d", priority);
+  if (list == NULL) {
+    return NULL; // No data found for this key
+  }
 
-  InfoNode *attendedNode = malloc(sizeof(InfoNode));
-  snprintf(attendedNode->info, sizeof(attendedNode->info), "%d", attended);
+  LinkedListNode *node = list->head;
+  while (node) {
+    HashMapValue *value = (HashMapValue *)node->data;
 
-  idNode->next = nameNode;
-  nameNode->next = ageNode;
-  ageNode->next = genderNode;
-  genderNode->next = cpfNode;
-  cpfNode->next = priorityNode;
-  priorityNode->next = attendedNode;
-  attendedNode->next = NULL;
+    if (strcmp((char *)value->key, key) == 0) {
+      return value->data; // Key found.
+    }
+    node = node->next;
+  }
 
-  hashTable->table[index] = idNode;
-
-  logMessage("Paciente inserido: [ID: %s, Nome: %s, Idade: %s, Sexo: %s, CPF: "
-             "%s, Prioridade: %s, Atendido: %s] no índice %d",
-             idNode->info, nameNode->info, ageNode->info, genderNode->info,
-             cpfNode->info, priorityNode->info, attendedNode->info, index);
+  return NULL; // Key not found
 }

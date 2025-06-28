@@ -1,10 +1,10 @@
 #include "filereader.h"
 
+#include "../structures/patient.h"
+#include "logger.h"
 #include <stdio.h>
 
-#include "logger.h"
-
-void loadPatients(HashTable *hashTable, const char *filename) {
+void loadPatients(HashMap *hashmap, const char *filename) {
   logMessage("[INFO] Iniciando o carregamento dos pacientes...");
 
   FILE *csv = fopen(filename, "r");
@@ -22,7 +22,13 @@ void loadPatients(HashTable *hashTable, const char *filename) {
     sscanf(line, "%15[^;];%63[^;];%d;%c;%15[^;];%d;%d", id, name, &age, &gender,
            cpf, &priority, &attended);
 
-    insertPatient(hashTable, id, name, age, gender, cpf, priority, attended);
+    Patient *patient =
+        createPatient(id, name, age, gender, cpf, priority, attended);
+    hashmap_insert(hashmap, id, patient);
+
+    logMessage("Paciente inserido: [ID: %s, Nome: %s, Idade: %d, Sexo: %c, "
+               "CPF:  %s, Prioridade: %d, Atendido: %d] no índice \"%s\"",
+               id, name, age, gender, cpf, priority, attended, id);
   }
 
   fclose(csv);
