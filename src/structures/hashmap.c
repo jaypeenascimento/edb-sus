@@ -6,7 +6,7 @@
 
 #include "../extensions/logger.h"
 
-void initializeTable(HashTable *hashTable) {
+void initializeTable(HashMap *hashTable) {
   for (int i = 0; i < TABLE_SIZE; i++) {
     hashTable->table[i] = NULL;
   }
@@ -19,7 +19,7 @@ int hashFunction(const char *id) {
   return h % TABLE_SIZE;
 }
 
-void insertPatient(HashTable *hashTable, char *id, char *name, int age,
+void insertPatient(HashMap *hashTable, char *id, char *name, int age,
                    char gender, char *cpf, int priority, int attended) {
   int index = hashFunction(id);
   int startIndex = index;

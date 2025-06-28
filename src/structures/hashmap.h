@@ -9,13 +9,13 @@ typedef struct InfoNode {
   struct InfoNode *next;
 } InfoNode;
 
-typedef struct HashTable {
+typedef struct HashMap {
   InfoNode *table[TABLE_SIZE];
-} HashTable;
+} HashMap;
 
-void initializeTable(HashTable *hashTable);
+void initializeTable(HashMap *hashTable);
 int hashFunction(const char *id);
-void insertPatient(HashTable *hashTable, char *id, char *name, int age,
+void insertPatient(HashMap *hashTable, char *id, char *name, int age,
                    char gender, char *cpf, int priority, int attended);
 
 #endif
