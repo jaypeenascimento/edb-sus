@@ -19,7 +19,7 @@ int main() {
       // wl, pl, f, b
   );
 
-  // Infinite loop called CYCLES, loop until all managers return false.
+  // Each loop is called cycle, loop until all managers return false.
   while (1) {
     // Call all managers
     // bool wlreturn = waitlist_manager_process(wl, ctx);
