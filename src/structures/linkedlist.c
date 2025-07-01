@@ -46,7 +46,6 @@ void linkedlist_remove(LinkedList *list, void *data) {
         list->head = curr->next;
       }
 
-      // Free only the node, not the value inside data.
       free(curr);
       return;
     }
