@@ -59,3 +59,26 @@ void deque_enqueueback(Deque *deque, void *data) {
     deque->back = node;
   }
 }
+
+void *deque_dequeuefront(Deque *deque) {
+  if (deque->front == NULL) {
+    // Deque is empty.
+    return NULL;
+  }
+
+  DequeNode *node = deque->front;
+  void *data = node->data;
+
+  if (deque->front == deque->back) {
+    // Only one element in the deque.
+    deque->front = NULL;
+    deque->back = NULL;
+  } else {
+    // More than one element in the deque.
+    deque->front = node->prev;
+    deque->front->next = NULL;
+  }
+
+  free(node);
+  return data;
+}
