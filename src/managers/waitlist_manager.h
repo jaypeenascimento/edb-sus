@@ -3,6 +3,7 @@
 
 #include "../structures/deque.h"
 #include "manager.h"
+#include <stdbool.h>
 
 typedef struct WaitlistManager {
   Deque *waitlist;
