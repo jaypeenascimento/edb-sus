@@ -88,3 +88,41 @@ void *deque_dequeuefront(Deque *deque) {
   free(node);
   return data;
 }
+
+void *deque_dequeueback(Deque *deque) {
+  if (deque->back == NULL) {
+    // Deque is empty.
+    return NULL;
+  }
+
+  DequeNode *node = deque->back;
+  void *data = node->data;
+
+  if (deque->front == deque->back) {
+    // Only one element in the deque.
+    deque->front = NULL;
+    deque->back = NULL;
+  } else {
+    // More than one element in the deque.
+    deque->back = node->next;
+    deque->back->prev = NULL;
+  }
+
+  deque->itemCount--;
+  free(node);
+  return data;
+}
+
+void *deque_peekfront(Deque *deque) {
+  if (deque->front == NULL) {
+    return NULL;
+  }
+  return deque->front->data;
+}
+
+void *deque_peekback(Deque *deque) {
+  if (deque->back == NULL) {
+    return NULL;
+  }
+  return deque->back->data;
+}

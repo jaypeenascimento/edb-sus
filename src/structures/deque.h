@@ -24,6 +24,12 @@ void deque_enqueueback(Deque *deque, void *data);
 // Returns the front node's data and removes it from the deque
 void *deque_dequeuefront(Deque *deque);
 
-// INFO: We dont need a dequeueback for this application. So it's not
-// implemented.
+// Returns the front node's data and removes it from the deque
+void *deque_dequeueback(Deque *deque);
+
+// Returns the front node's data without removing it from the deque
+void *deque_peekfront(Deque *deque);
+
+// Returns the back node's data without removing it from the deque
+void *deque_peekback(Deque *deque);
 #endif
