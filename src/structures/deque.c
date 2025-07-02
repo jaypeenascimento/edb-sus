@@ -17,6 +17,7 @@ Deque *deque_create() {
   if (!deque) {
     return NULL;
   }
+  deque->itemCount = 0;
   deque->front = NULL;
   deque->back = NULL;
   return deque;
@@ -39,6 +40,8 @@ void deque_enqueuefront(Deque *deque, void *data) {
     deque->front->next = node;
     deque->front = node;
   }
+
+  deque->itemCount++;
 }
 
 void deque_enqueueback(Deque *deque, void *data) {
@@ -58,6 +61,8 @@ void deque_enqueueback(Deque *deque, void *data) {
     deque->back->prev = node;
     deque->back = node;
   }
+
+  deque->itemCount++;
 }
 
 void *deque_dequeuefront(Deque *deque) {
@@ -79,6 +84,7 @@ void *deque_dequeuefront(Deque *deque) {
     deque->front->next = NULL;
   }
 
+  deque->itemCount--;
   free(node);
   return data;
 }

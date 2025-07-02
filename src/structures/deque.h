@@ -8,6 +8,7 @@ typedef struct DequeNode {
 } DequeNode;
 
 typedef struct Deque {
+  int itemCount;
   DequeNode *front;
   DequeNode *back;
 } Deque;
