@@ -1,0 +1,22 @@
+#ifndef WAITLIST_MANAGER_H
+#define WAITLIST_MANAGER_H
+
+#include "../structures/deque.h"
+#include "../structures/patient.h"
+#include "manager.h"
+#include <stdbool.h>
+
+typedef struct WaitlistManager {
+  Deque *waitlist;
+} WaitlistManager;
+
+WaitlistManager *new_waitlist_manager();
+
+bool waitlist_manager_process(WaitlistManager *manager, ManagerContext *ctx);
+
+bool WaitListManagerCanInsert(WaitlistManager *manager);
+
+void WaitListManagerInsertPatient(WaitlistManager *manager, Patient *p);
+
+Patient *WaitListManagerRemovePatient(WaitlistManager *manager);
+#endif
