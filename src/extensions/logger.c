@@ -12,7 +12,7 @@ FILE *openLogFile(const char *filename) {
   FILE *logFile = fopen(filename, "w");
 
   if (!logFile) {
-    logMessage(NULL, "Erro ao abrir o arquivo de log!");
+    logMessage(NULL, "[ERROR] Erro ao abrir o arquivo de log!");
   }
 
   return logFile;

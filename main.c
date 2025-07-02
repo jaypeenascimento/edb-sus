@@ -1,10 +1,11 @@
+#include <unistd.h>
+
 #include "src/extensions/filereader.h"
 #include "src/extensions/logger.h"
 #include "src/managers/manager.h"
 #include "src/managers/waitlist_manager.h"
 #include "src/structures/hashmap.h"
-
-#include <unistd.h>
+#include "src/structures/stack.h"
 
 int main() {
   HashMap *hashmap = hashmap_create();
