@@ -16,6 +16,7 @@ bool waitlist_manager_process(WaitlistManager *manager, ManagerContext *ctx);
 
 bool WaitListManagerCanInsert(WaitlistManager *manager);
 
-void WaitListManagerInsertPatient(WaitlistManager *manager, Patient p);
+void WaitListManagerInsertPatient(WaitlistManager *manager, Patient *p);
 
+Patient *WaitListManagerRemovePatient(WaitlistManager *manager);
 #endif
