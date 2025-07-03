@@ -1,7 +1,7 @@
 #include "linkedlist.h"
 #include <stdlib.h>
 
-LinkedList *linkedlist_create() {
+LinkedList *linkedlistCreate() {
   LinkedList *list = (LinkedList *)malloc(sizeof(LinkedList));
   if (list) {
     list->head = NULL;
@@ -9,7 +9,7 @@ LinkedList *linkedlist_create() {
   return list;
 }
 
-void linkedlist_append(LinkedList *list, void *data) {
+void linkedlistAppend(LinkedList *list, void *data) {
   if (!list)
     return;
 
@@ -31,7 +31,7 @@ void linkedlist_append(LinkedList *list, void *data) {
   }
 }
 
-void linkedlist_remove(LinkedList *list, void *data) {
+void linkedlistRemove(LinkedList *list, void *data) {
   if (!list || !list->head)
     return;
 
@@ -55,7 +55,7 @@ void linkedlist_remove(LinkedList *list, void *data) {
   }
 }
 
-void linkedlist_free(LinkedList *list) {
+void linkedlistFree(LinkedList *list) {
   if (!list)
     return;
   LinkedListNode *curr = list->head;

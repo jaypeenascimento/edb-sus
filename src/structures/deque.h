@@ -13,23 +13,17 @@ typedef struct Deque {
   DequeNode *back;
 } Deque;
 
-Deque *deque_create();
+Deque *dequeCreate();
 
-// Adds a new node with data to the front of the deque
-void deque_enqueuefront(Deque *deque, void *data);
+void dequeEnqueueFront(Deque *deque, void *data);
 
-// Adds a new node with data to the back of the deque
-void deque_enqueueback(Deque *deque, void *data);
+void dequeEnqueueBack(Deque *deque, void *data);
 
-// Returns the front node's data and removes it from the deque
-void *deque_dequeuefront(Deque *deque);
+void *dequeDequeueFront(Deque *deque);
 
-// Returns the front node's data and removes it from the deque
-void *deque_dequeueback(Deque *deque);
+void *dequeDequeueBack(Deque *deque);
 
-// Returns the front node's data without removing it from the deque
-void *deque_peekfront(Deque *deque);
+void *dequePeekFront(Deque *deque);
 
-// Returns the back node's data without removing it from the deque
-void *deque_peekback(Deque *deque);
+void *dequePeekBack(Deque *deque);
 #endif

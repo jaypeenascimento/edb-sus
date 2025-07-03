@@ -4,13 +4,13 @@
 #include "../structures/deque.h"
 #include <stdlib.h>
 
-WaitlistManager *new_waitlist_manager() {
+WaitlistManager *newWaitlistManager() {
   WaitlistManager *manager = malloc(sizeof(WaitlistManager));
   if (!manager) {
     return NULL;
   }
 
-  manager->waitlist = deque_create();
+  manager->waitlist = dequeCreate();
   if (!manager->waitlist) {
     free(manager);
     return NULL;
@@ -27,11 +27,13 @@ bool _checkWlIsNull(WaitlistManager *manager) {
   return false;
 }
 
-bool waitlist_manager_process(WaitlistManager *manager, ManagerContext *ctx) {
-  return false;
+bool waitlistManagerProcess(WaitlistManager *manager, ManagerContext *ctx) {
+    (void)manager;
+    (void)ctx;
+    return false;
 }
 
-bool WaitlistManagerCanInsert(WaitlistManager *manager) {
+bool waitlistManagerCanInsert(WaitlistManager *manager) {
   if (_checkWlIsNull(manager)) {
     return false;
   }
@@ -39,27 +41,27 @@ bool WaitlistManagerCanInsert(WaitlistManager *manager) {
   return manager->waitlist->itemCount < MAX_WAITLIST_SIZE;
 }
 
-void WaitListManagerInsertPatient(WaitlistManager *manager, Patient *p) {
-  if (!WaitlistManagerCanInsert(manager)) {
+void waitlistManagerInsertPatient(WaitlistManager *manager, Patient *p) {
+  if (!waitlistManagerCanInsert(manager)) {
     return logMessage(
         "[ERROR] Não é possível inserir paciente na lista de espera: "
         "capacidade máxima atingida");
   }
 
   if (p->priority >= HIGH_PRIORITY_THRESHOLD) {
-    deque_enqueuefront(manager->waitlist, p);
+    dequeEnqueueFront(manager->waitlist, p);
   } else {
-    deque_enqueueback(manager->waitlist, p);
+    dequeEnqueueBack(manager->waitlist, p);
   }
 }
 
-Patient *WaitListManagerRemovePatient(WaitlistManager *manager) {
+Patient *waitlistManagerRemovePatient(WaitlistManager *manager) {
   if (_checkWlIsNull(manager)) {
     return NULL;
   }
 
-  Patient *first = (Patient *)deque_peekfront(manager->waitlist);
-  Patient *last = (Patient *)deque_peekback(manager->waitlist);
+  Patient *first = (Patient *)dequePeekFront(manager->waitlist);
+  Patient *last = (Patient *)dequePeekBack(manager->waitlist);
 
   if (!first || !last) {
     logMessage("[ERROR] Não há pacientes na lista de espera");
@@ -67,8 +69,8 @@ Patient *WaitListManagerRemovePatient(WaitlistManager *manager) {
   }
 
   if (first->priority >= last->priority) {
-    return (Patient *)deque_dequeuefront(manager->waitlist);
+    return (Patient *)dequeDequeueFront(manager->waitlist);
   } else {
-    return (Patient *)deque_dequeueback(manager->waitlist);
+    return (Patient *)dequeDequeueBack(manager->waitlist);
   }
 }
