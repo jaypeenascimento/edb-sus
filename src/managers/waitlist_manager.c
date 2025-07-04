@@ -2,6 +2,8 @@
 #include "../commons.h"
 #include "../extensions/logger.h"
 #include "../structures/deque.h"
+#include "bedlist_manager.h"
+#include "manager.h"
 #include <stdlib.h>
 
 WaitlistManager *newWaitlistManager() {
@@ -27,10 +29,12 @@ bool _checkWlIsNull(WaitlistManager *manager) {
   return false;
 }
 
-bool waitlistManagerProcess(WaitlistManager *manager, ManagerContext *ctx) {
-    (void)manager;
-    (void)ctx;
-    return false;
+bool _waitlistManagerIsEmpty(WaitlistManager *manager) {
+  if (_checkWlIsNull(manager)) {
+    return true;
+  }
+
+  return manager->waitlist->itemCount == 0;
 }
 
 bool waitlistManagerCanInsert(WaitlistManager *manager) {
@@ -73,4 +77,30 @@ Patient *waitlistManagerRemovePatient(WaitlistManager *manager) {
   } else {
     return (Patient *)dequeDequeueBack(manager->waitlist);
   }
+}
+
+bool waitlistManagerProcess(WaitlistManager *manager, ManagerContext *ctx) {
+  if (_checkWlIsNull(manager)) {
+    logMessage("[DEBUG-WL] Waitlist manager é NULL. Encerrando processamento.");
+    return false;
+  }
+
+  if (_waitlistManagerIsEmpty(manager)) {
+    logMessage(
+        "[DEBUG-WL] Fila de espera está vazia. Encerrando processamento.");
+    return false;
+  }
+
+  if (!BedlistManagerCheckAvailableBed(ctx->bedlistManager)) {
+    logMessage("[DEBUG-WL] Não existe leito disponível para alocar pacientes. "
+               "Encerrando processamento.");
+    return false;
+  }
+
+  logMessage("[DEBUG-WL] Movendo paciente para o leito...");
+  Patient *p = waitlistManagerRemovePatient(manager);
+  BedlistManagerOccupyBed(ctx->bedlistManager, p);
+  logMessage("INTERNADO - %s (prioridade %d)", p->id, p->priority);
+
+  return true;
 }
