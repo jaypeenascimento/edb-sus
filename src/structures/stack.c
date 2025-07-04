@@ -6,7 +6,7 @@ Stack *stackCreate() {
     Stack *stack = (Stack *)malloc(sizeof(Stack));
 
     if (stack) {
-        stack->list = linkedlist_create();
+        stack->list = linkedlistCreate();
         logMessage("[INFO] Pilha criada com sucesso.");
     } else {
         logMessage("[ERROR] Erro ao criar a pilha.");
@@ -78,7 +78,7 @@ void stackFree(Stack *stack) {
         return;
     }
 
-    linkedlist_free(stack->list);
+    linkedlistFree(stack->list);
     free(stack);
 
     logMessage("[INFO] Pilha liberada com sucesso.");

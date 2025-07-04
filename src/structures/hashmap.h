@@ -14,11 +14,13 @@ typedef struct HashMap {
   LinkedList *data[TABLE_SIZE];
 } HashMap;
 
-HashMap *hashmap_create();
+HashMap *hashmapCreate();
 
-void hashmap_insert(HashMap *hashmap, char *key, void *data);
+void hashmapInsert(HashMap *hashmap, char *key, void *data);
 
-void *hashmap_fetch(HashMap *hashmap, char *key);
+void *hashmapFetch(HashMap *hashmap, char *key);
 
-void hashmap_free(HashMap *hashmap);
+void hashmapFree(HashMap *hashmap);
+
+int hash(const char *key);
 #endif

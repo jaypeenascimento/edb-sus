@@ -10,6 +10,6 @@ typedef struct ManagerContext {
 
 } ManagerContext;
 
-ManagerContext *new_manager_context(WaitlistManager *wl);
+ManagerContext *newManagerContext(WaitlistManager *wl);
 
 #endif

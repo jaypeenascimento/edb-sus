@@ -10,13 +10,13 @@ typedef struct WaitlistManager {
   Deque *waitlist;
 } WaitlistManager;
 
-WaitlistManager *new_waitlist_manager();
+WaitlistManager *newWaitlistManager();
 
-bool waitlist_manager_process(WaitlistManager *manager, ManagerContext *ctx);
+bool waitlistManagerProcess(WaitlistManager *manager, ManagerContext *ctx);
 
-bool WaitListManagerCanInsert(WaitlistManager *manager);
+bool waitlistManagerCanInsert(WaitlistManager *manager);
 
-void WaitListManagerInsertPatient(WaitlistManager *manager, Patient *p);
+void waitlistManagerInsertPatient(WaitlistManager *manager, Patient *p);
 
-Patient *WaitListManagerRemovePatient(WaitlistManager *manager);
+Patient *waitlistManagerRemovePatient(WaitlistManager *manager);
 #endif

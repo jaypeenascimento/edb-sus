@@ -1,7 +1,7 @@
 #include "deque.h"
 #include <stdlib.h>
 
-DequeNode *deque_createnode(void *data) {
+DequeNode *dequeCreateNode(void *data) {
   DequeNode *new_node = malloc(sizeof(DequeNode));
   if (!new_node) {
     return NULL;
@@ -12,7 +12,7 @@ DequeNode *deque_createnode(void *data) {
   return new_node;
 }
 
-Deque *deque_create() {
+Deque *dequeCreate() {
   Deque *deque = malloc(sizeof(Deque));
   if (!deque) {
     return NULL;
@@ -23,19 +23,16 @@ Deque *deque_create() {
   return deque;
 }
 
-void deque_enqueuefront(Deque *deque, void *data) {
-  DequeNode *node = deque_createnode(data);
+void dequeEnqueueFront(Deque *deque, void *data) {
+  DequeNode *node = dequeCreateNode(data);
   if (!node) {
-    // FORCEFULL CRASH PROGRAM IF NO MEMORY.
     return exit(1);
   }
 
   if (deque->front == NULL) {
-    // Deque is empty.
     deque->front = node;
     deque->back = node;
   } else {
-    // Deque is non-empty.
     node->prev = deque->front;
     deque->front->next = node;
     deque->front = node;
@@ -44,19 +41,16 @@ void deque_enqueuefront(Deque *deque, void *data) {
   deque->itemCount++;
 }
 
-void deque_enqueueback(Deque *deque, void *data) {
-  DequeNode *node = deque_createnode(data);
+void dequeEnqueueBack(Deque *deque, void *data) {
+  DequeNode *node = dequeCreateNode(data);
   if (!node) {
-    // FORCEFULL CRASH PROGRAM IF NO MEMORY.
     return exit(1);
   }
 
   if (deque->front == NULL) {
-    // Deque is empty.
     deque->front = node;
     deque->back = node;
   } else {
-    // Deque is non-empty.
     node->next = deque->back;
     deque->back->prev = node;
     deque->back = node;
@@ -65,9 +59,8 @@ void deque_enqueueback(Deque *deque, void *data) {
   deque->itemCount++;
 }
 
-void *deque_dequeuefront(Deque *deque) {
+void *dequeDequeueFront(Deque *deque) {
   if (deque->front == NULL) {
-    // Deque is empty.
     return NULL;
   }
 
@@ -75,11 +68,9 @@ void *deque_dequeuefront(Deque *deque) {
   void *data = node->data;
 
   if (deque->front == deque->back) {
-    // Only one element in the deque.
     deque->front = NULL;
     deque->back = NULL;
   } else {
-    // More than one element in the deque.
     deque->front = node->prev;
     deque->front->next = NULL;
   }
@@ -89,9 +80,8 @@ void *deque_dequeuefront(Deque *deque) {
   return data;
 }
 
-void *deque_dequeueback(Deque *deque) {
+void *dequeDequeueBack(Deque *deque) {
   if (deque->back == NULL) {
-    // Deque is empty.
     return NULL;
   }
 
@@ -99,11 +89,9 @@ void *deque_dequeueback(Deque *deque) {
   void *data = node->data;
 
   if (deque->front == deque->back) {
-    // Only one element in the deque.
     deque->front = NULL;
     deque->back = NULL;
   } else {
-    // More than one element in the deque.
     deque->back = node->next;
     deque->back->prev = NULL;
   }
@@ -113,14 +101,14 @@ void *deque_dequeueback(Deque *deque) {
   return data;
 }
 
-void *deque_peekfront(Deque *deque) {
+void *dequePeekFront(Deque *deque) {
   if (deque->front == NULL) {
     return NULL;
   }
   return deque->front->data;
 }
 
-void *deque_peekback(Deque *deque) {
+void *dequePeekBack(Deque *deque) {
   if (deque->back == NULL) {
     return NULL;
   }

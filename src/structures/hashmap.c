@@ -5,12 +5,12 @@
 
 #include "linkedlist.h"
 
-HashMap *hashmap_create() {
+HashMap *hashmapCreate() {
     HashMap *hashmap = (HashMap *)malloc(sizeof(HashMap));
     return hashmap;
 }
 
-HashMapValue *hashmap_create_value(char *key, void *data) {
+HashMapValue *hashmapCreateValue(char *key, void *data) {
     HashMapValue *value = (HashMapValue *)malloc(sizeof(HashMapValue));
     value->key = key;
     value->data = data;
@@ -24,7 +24,7 @@ int hash(const char *key) {
     return h % TABLE_SIZE;
 }
 
-void hashmap_free(HashMap *hashmap) {
+void hashmapFree(HashMap *hashmap) {
     if (hashmap == NULL) {
         return;
     }
@@ -39,27 +39,27 @@ void hashmap_free(HashMap *hashmap) {
                 curr = curr->next;
             }
 
-            linkedlist_free(list);
+            linkedlistFree(list);
         }
     }
 
     free(hashmap);
 }
 
-void hashmap_insert(HashMap *hashmap, char *key, void *data) {
+void hashmapInsert(HashMap *hashmap, char *key, void *data) {
     int idx = hash(key);
 
     LinkedList *list = hashmap->data[idx];
     if (list == NULL) {
-        list = linkedlist_create();
+        list = linkedlistCreate();
         hashmap->data[idx] = list;
     }
 
-    HashMapValue *value = hashmap_create_value(key, data);
-    linkedlist_append(list, value);
+    HashMapValue *value = hashmapCreateValue(key, data);
+    linkedlistAppend(list, value);
 }
 
-void *hashmap_fetch(HashMap *hashmap, char *key) {
+void *hashmapFetch(HashMap *hashmap, char *key) {
     int idx = hash(key);
     LinkedList *list = hashmap->data[idx];
 

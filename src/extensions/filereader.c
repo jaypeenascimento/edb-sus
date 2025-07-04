@@ -26,7 +26,7 @@ void loadPatients(HashMap *hashmap, const char *filename) {
 
         Patient *patient =
             createPatient(id, name, age, gender, cpf, priority, attended);
-        hashmap_insert(hashmap, id, patient);
+        hashmapInsert(hashmap, id, patient);
 
         logMessage(
             "[INFO] Paciente inserido: [ID: %s, Nome: %s, Idade: %d, Sexo: %c, "
