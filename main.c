@@ -18,7 +18,7 @@ int main() {
 
   WaitlistManager *wl = newWaitlistManager();
   BedlistManager *bl = NewBedlistManager();
-  ManagerContext *ctx = newManagerContext(wl);
+  ManagerContext *ctx = newManagerContext(wl, bl);
 
   while (1) {
     // Sorteia um paciente do hashmap usando o patientdata_manager
