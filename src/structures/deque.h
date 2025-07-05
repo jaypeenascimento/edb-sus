@@ -2,15 +2,15 @@
 #define DEQUE_H
 
 typedef struct DequeNode {
-  void *data;
-  struct DequeNode *next;
-  struct DequeNode *prev;
+    void *data;
+    struct DequeNode *next;
+    struct DequeNode *prev;
 } DequeNode;
 
 typedef struct Deque {
-  int itemCount;
-  DequeNode *front;
-  DequeNode *back;
+    int itemCount;
+    DequeNode *front;
+    DequeNode *back;
 } Deque;
 
 Deque *dequeCreate();
