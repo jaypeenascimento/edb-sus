@@ -81,23 +81,21 @@ Patient *waitlistManagerRemovePatient(WaitlistManager *manager) {
 
 bool waitlistManagerProcess(WaitlistManager *manager, ManagerContext *ctx) {
   if (_checkWlIsNull(manager)) {
-    logMessage("[DEBUG-WL] Waitlist manager é NULL. Encerrando processamento.");
+    logMessage("[INFO] Waitlist manager é NULL. Encerrando processamento.");
     return false;
   }
 
   if (_waitlistManagerIsEmpty(manager)) {
-    logMessage(
-        "[DEBUG-WL] Fila de espera está vazia. Encerrando processamento.");
+    logMessage("[INFO] Fila de espera está vazia. Encerrando processamento.");
     return false;
   }
 
   if (!BedlistManagerCheckAvailableBed(ctx->bedlistManager)) {
-    logMessage("[DEBUG-WL] Não existe leito disponível para alocar pacientes. "
+    logMessage("[INFO] Não existe leito disponível para alocar pacientes. "
                "Encerrando processamento.");
     return false;
   }
 
-  logMessage("[DEBUG-WL] Movendo paciente para o leito...");
   Patient *p = waitlistManagerRemovePatient(manager);
   BedlistManagerOccupyBed(ctx->bedlistManager, p);
   logMessage("INTERNADO - %s (prioridade %d)", p->id, p->priority);

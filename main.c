@@ -5,6 +5,7 @@
 #include "src/extensions/filereader.h"
 #include "src/extensions/logger.h"
 #include "src/managers/bedlist_manager.h"
+#include "src/managers/discharge_manager.h"
 #include "src/managers/manager.h"
 #include "src/managers/patientdata_manager.h"
 #include "src/managers/waitlist_manager.h"
@@ -18,16 +19,24 @@ int main() {
 
   WaitlistManager *wl = newWaitlistManager();
   BedlistManager *bl = NewBedlistManager();
-  ManagerContext *ctx = newManagerContext(wl, bl);
+  DischargeManager *d = newDischargeManager();
+  ManagerContext *ctx = newManagerContext(wl, bl, d);
 
   while (1) {
     // Sorteia um paciente do hashmap usando o patientdata_manager
+    // TODO: patientDataManagerGetRandomPatient só pode buscar pacientes com
+    // attended == 0;
+    // Talvez o correto seja mudar o "attended" para 1 sempre que um paciente
+    // for soteado por essa função. Ou fazer essa mudança em um momento
+    // posterior.
     Patient *randomPatient = patientDataManagerGetRandomPatient(hashmap);
     if (randomPatient) {
-      waitlistManagerInsertPatient(wl, randomPatient);
-      logMessage("[INFO] Paciente transferido do hashmap para o deque: %s",
-                 randomPatient->name);
-      patientRemove(hashmap, randomPatient->id);
+      if (waitlistManagerCanInsert(wl)) {
+        waitlistManagerInsertPatient(wl, randomPatient);
+        logMessage("[INFO] Paciente transferido do hashmap para o deque: %s",
+                   randomPatient->name);
+        patientRemove(hashmap, randomPatient->id);
+      }
     } else {
       logMessage("[INFO] Não há mais pacientes para transferir do hashmap.");
     }
@@ -35,7 +44,8 @@ int main() {
     bool wlreturn = waitlistManagerProcess(wl, ctx);
     bool blreturn = BedlistManagerProcess(bl, ctx);
 
-    sleep(2);
+    // INFO: Removing for testing purposes.
+    // sleep(2);
 
     // Exit loop if all managers return false.
     if (!(wlreturn || blreturn)) {

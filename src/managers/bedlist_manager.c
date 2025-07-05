@@ -3,6 +3,7 @@
 
 #include "../commons.h"
 #include "../extensions/logger.h"
+#include "discharge_manager.h"
 #include <stdbool.h>
 
 BedlistManager *NewBedlistManager() {
@@ -39,11 +40,6 @@ bool _checkBlIsEmpty(BedlistManager *manager) {
     }
   }
   return true;
-}
-
-bool BedlistManagerProcess(BedlistManager *manager, ManagerContext *ctx) {
-  // Implement the logic to process the bed list manager
-  return false;
 }
 
 bool BedlistManagerCheckAvailableBed(BedlistManager *manager) {
@@ -102,4 +98,27 @@ Patient *BedlistManagerDischargeRandomPatient(BedlistManager *manager) {
 
   logMessage("[INFO] Nenhum paciente foi sorteado para alta");
   return NULL;
+}
+
+bool BedlistManagerProcess(BedlistManager *manager, ManagerContext *ctx) {
+  if (_checkBlIsNull(manager)) {
+    logMessage(
+        "[INFO] Gerenciador de leitos está NULL. Encerrando processamento");
+    return false;
+  }
+
+  if (_checkBlIsEmpty(manager)) {
+    logMessage("[INFO] Leitos estão vazios. Encerrando processamento");
+    return false;
+  }
+
+  Patient *p = BedlistManagerDischargeRandomPatient(manager);
+  if (!p) {
+    logMessage("[INFO] Nenhum paciente foi selecionado para alta. "
+               "Encerrando processamento");
+    return false;
+  }
+  dischargeManagerDischargePatient(ctx->dischargeManager, p);
+
+  return true;
 }

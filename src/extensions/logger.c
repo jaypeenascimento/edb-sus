@@ -2,7 +2,6 @@
 
 #include <stdarg.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
 FILE *singletonLogFileDescriptor = NULL;
@@ -12,7 +11,7 @@ FILE *openLogFile(const char *filename) {
   FILE *logFile = fopen(filename, "w");
 
   if (!logFile) {
-    logMessage(NULL, "[ERROR] Erro ao abrir o arquivo de log!");
+    logMessage("[ERROR] Erro ao abrir o arquivo de log!");
   }
 
   return logFile;
@@ -33,23 +32,36 @@ void closeLogFile() {
     fclose(logFile);
 }
 
+// FIX: This does not cause segmentation fault.
+// But it does not print to the log file.
 void logMessage(const char *format, ...) {
-  FILE *logFile = LogFile();
   va_list args;
-  va_list args_copy;
-
   va_start(args, format);
-  va_copy(args_copy, args);
-
-  size_t len = strlen(format) + 2;
-  char *nlformat = malloc(len);
-  sprintf(nlformat, "%s\n", format);
-
-  vprintf(nlformat, args);
-  vfprintf(logFile, nlformat, args_copy);
-
-  free(nlformat);
-  fflush(logFile);
-  va_end(args_copy);
+  vprintf(format, args);
+  printf("\n");
   va_end(args);
 }
+
+// void logMessage(const char *format, ...) {
+//   FILE *logFile = LogFile();
+//   if (!logFile) {
+//     return;
+//   }
+//   va_list args;
+//   va_list args_copy;
+//   va_copy(args_copy, args);
+//   va_start(args, format);
+//
+//   // Print to stdout with newline
+//   vprintf(format, args);
+//   printf("\n");
+//
+//   // Print to log file with newline
+//   va_start(args_copy, format);
+//   vfprintf(logFile, format, args_copy);
+//   fprintf(logFile, "\n");
+//   va_end(args_copy);
+//
+//   fflush(logFile);
+//   va_end(args);
+// }
