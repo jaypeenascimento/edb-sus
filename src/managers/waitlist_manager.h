@@ -1,13 +1,14 @@
 #ifndef WAITLIST_MANAGER_H
 #define WAITLIST_MANAGER_H
 
+#include <stdbool.h>
+
 #include "../structures/deque.h"
 #include "../structures/patient.h"
 #include "manager.h"
-#include <stdbool.h>
 
 typedef struct WaitlistManager {
-  Deque *waitlist;
+    Deque *waitlist;
 } WaitlistManager;
 
 WaitlistManager *newWaitlistManager();

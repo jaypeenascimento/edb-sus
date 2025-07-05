@@ -37,14 +37,15 @@ void stackPush(Stack *stack, void *data) {
 
 void *stackPop(Stack *stack) {
     if (!stack || !stack->list || !stack->list->head) {
-        logMessage("[ERROR] Erro ao desempilhar: pilha vazia ou não inicializada.");
+        logMessage(
+            "[ERROR] Erro ao desempilhar: pilha vazia ou não inicializada.");
         return NULL;
     }
 
     LinkedListNode *node = stack->list->head;
     void *data = node->data;
     stack->list->head = node->next;
-    
+
     free(node);
 
     logMessage("[INFO] Elemento desempilhado com sucesso.");
@@ -54,7 +55,8 @@ void *stackPop(Stack *stack) {
 
 void *stackPeek(Stack *stack) {
     if (!stack || !stack->list || !stack->list->head) {
-        logMessage("[ERROR] Erro ao acessar o topo: pilha vazia ou não inicializada.");
+        logMessage(
+            "[ERROR] Erro ao acessar o topo: pilha vazia ou não inicializada.");
         return NULL;
     }
 

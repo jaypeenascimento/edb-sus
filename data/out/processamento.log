@@ -1,1 +1,428 @@
+[INFO] Iniciando o carregamento dos pacientes...
+[INFO] Paciente inserido: [ID: PAC001, Nome: Sophie Peixoto, Idade: 50, Sexo: F, CPF:  04732658938, Prioridade: 1, Atendido: 0] no índice "PAC001"
+[INFO] Paciente inserido: [ID: PAC002, Nome: Beatriz Gomes, Idade: 34, Sexo: F, CPF:  21475683090, Prioridade: 4, Atendido: 0] no índice "PAC002"
+[INFO] Paciente inserido: [ID: PAC003, Nome: Nina Melo, Idade: 39, Sexo: F, CPF:  78123694555, Prioridade: 3, Atendido: 0] no índice "PAC003"
+[INFO] Paciente inserido: [ID: PAC004, Nome: Manuela Ferreira, Idade: 75, Sexo: F, CPF:  08975362159, Prioridade: 5, Atendido: 0] no índice "PAC004"
+[INFO] Paciente inserido: [ID: PAC005, Nome: Thomas Martins, Idade: 18, Sexo: M, CPF:  13896470213, Prioridade: 2, Atendido: 0] no índice "PAC005"
+[INFO] Paciente inserido: [ID: PAC006, Nome: Calebe Jesus, Idade: 97, Sexo: M, CPF:  84192675382, Prioridade: 5, Atendido: 0] no índice "PAC006"
+[INFO] Paciente inserido: [ID: PAC007, Nome: Ana Laura Nogueira, Idade: 33, Sexo: F, CPF:  53416902734, Prioridade: 3, Atendido: 0] no índice "PAC007"
+[INFO] Paciente inserido: [ID: PAC008, Nome: Ana Clara Carvalho, Idade: 13, Sexo: F, CPF:  29067438103, Prioridade: 3, Atendido: 0] no índice "PAC008"
+[INFO] Paciente inserido: [ID: PAC009, Nome: Eduarda da Rosa, Idade: 61, Sexo: F, CPF:  96438201570, Prioridade: 3, Atendido: 0] no índice "PAC009"
+[INFO] Paciente inserido: [ID: PAC010, Nome: Maria Sophia Melo, Idade: 56, Sexo: F, CPF:  39052718423, Prioridade: 5, Atendido: 0] no índice "PAC010"
+[INFO] Paciente inserido: [ID: PAC011, Nome: Benício Castro, Idade: 82, Sexo: M, CPF:  23064578910, Prioridade: 5, Atendido: 0] no índice "PAC011"
+[INFO] Paciente inserido: [ID: PAC012, Nome: Caroline Costa, Idade: 62, Sexo: F, CPF:  61590743261, Prioridade: 5, Atendido: 0] no índice "PAC012"
+[INFO] Paciente inserido: [ID: PAC013, Nome: Luana da Rocha, Idade: 34, Sexo: F, CPF:  09648253765, Prioridade: 5, Atendido: 0] no índice "PAC013"
+[INFO] Paciente inserido: [ID: PAC014, Nome: Fernanda Monteiro, Idade: 2, Sexo: F, CPF:  62043798103, Prioridade: 4, Atendido: 0] no índice "PAC014"
+[INFO] Paciente inserido: [ID: PAC015, Nome: Francisco Moraes, Idade: 91, Sexo: M, CPF:  72360149822, Prioridade: 5, Atendido: 0] no índice "PAC015"
+[INFO] Paciente inserido: [ID: PAC016, Nome: Noah Pires, Idade: 64, Sexo: M, CPF:  20753496143, Prioridade: 2, Atendido: 0] no índice "PAC016"
+[INFO] Paciente inserido: [ID: PAC017, Nome: Mirella Fernandes, Idade: 94, Sexo: F, CPF:  28035796429, Prioridade: 1, Atendido: 0] no índice "PAC017"
+[INFO] Paciente inserido: [ID: PAC018, Nome: Emilly Cunha, Idade: 25, Sexo: F, CPF:  37542816900, Prioridade: 2, Atendido: 0] no índice "PAC018"
+[INFO] Paciente inserido: [ID: PAC019, Nome: Sofia Peixoto, Idade: 19, Sexo: F, CPF:  10352948779, Prioridade: 1, Atendido: 0] no índice "PAC019"
+[INFO] Paciente inserido: [ID: PAC020, Nome: Rafaela Peixoto, Idade: 11, Sexo: F, CPF:  06875913410, Prioridade: 5, Atendido: 0] no índice "PAC020"
+[INFO] Paciente inserido: [ID: PAC021, Nome: Samuel da Cruz, Idade: 63, Sexo: M, CPF:  78946051230, Prioridade: 3, Atendido: 0] no índice "PAC021"
+[INFO] Paciente inserido: [ID: PAC022, Nome: Lucas Gabriel Barros, Idade: 71, Sexo: M, CPF:  63195704234, Prioridade: 1, Atendido: 0] no índice "PAC022"
+[INFO] Paciente inserido: [ID: PAC023, Nome: Enrico Alves, Idade: 71, Sexo: M, CPF:  08179463222, Prioridade: 5, Atendido: 0] no índice "PAC023"
+[INFO] Paciente inserido: [ID: PAC024, Nome: Ana Luiza Ribeiro, Idade: 27, Sexo: F, CPF:  61023794896, Prioridade: 4, Atendido: 0] no índice "PAC024"
+[INFO] Paciente inserido: [ID: PAC025, Nome: Davi Lucas Freitas, Idade: 12, Sexo: M, CPF:  09815246720, Prioridade: 3, Atendido: 0] no índice "PAC025"
+[INFO] Paciente inserido: [ID: PAC026, Nome: Maria Sales, Idade: 74, Sexo: F, CPF:  76584193209, Prioridade: 3, Atendido: 0] no índice "PAC026"
+[INFO] Paciente inserido: [ID: PAC027, Nome: Daniel da Costa, Idade: 24, Sexo: M, CPF:  45862073965, Prioridade: 2, Atendido: 0] no índice "PAC027"
+[INFO] Paciente inserido: [ID: PAC028, Nome: Gabriel da Cruz, Idade: 5, Sexo: M, CPF:  24538190705, Prioridade: 4, Atendido: 0] no índice "PAC028"
+[INFO] Paciente inserido: [ID: PAC029, Nome: Ana Beatriz Lima, Idade: 9, Sexo: F, CPF:  28193647050, Prioridade: 2, Atendido: 0] no índice "PAC029"
+[INFO] Paciente inserido: [ID: PAC030, Nome: Matheus Rocha, Idade: 20, Sexo: M, CPF:  75803691410, Prioridade: 1, Atendido: 0] no índice "PAC030"
+[INFO] Paciente inserido: [ID: PAC031, Nome: Isaac da Costa, Idade: 90, Sexo: M, CPF:  26108745371, Prioridade: 5, Atendido: 0] no índice "PAC031"
+[INFO] Paciente inserido: [ID: PAC032, Nome: Caio Novaes, Idade: 36, Sexo: M, CPF:  89436715048, Prioridade: 2, Atendido: 0] no índice "PAC032"
+[INFO] Paciente inserido: [ID: PAC033, Nome: Francisco da Cunha, Idade: 87, Sexo: M, CPF:  63509782429, Prioridade: 5, Atendido: 0] no índice "PAC033"
+[INFO] Paciente inserido: [ID: PAC034, Nome: Luiz Felipe Novaes, Idade: 36, Sexo: M, CPF:  43061957243, Prioridade: 4, Atendido: 0] no índice "PAC034"
+[INFO] Paciente inserido: [ID: PAC035, Nome: Isis Moreira, Idade: 85, Sexo: F, CPF:  82143759673, Prioridade: 1, Atendido: 0] no índice "PAC035"
+[INFO] Paciente inserido: [ID: PAC036, Nome: Luna Martins, Idade: 42, Sexo: F, CPF:  79346105216, Prioridade: 4, Atendido: 0] no índice "PAC036"
+[INFO] Paciente inserido: [ID: PAC037, Nome: Luiz Miguel da Conceição, Idade: 76, Sexo: M, CPF:  42698307510, Prioridade: 2, Atendido: 0] no índice "PAC037"
+[INFO] Paciente inserido: [ID: PAC038, Nome: Enzo Gabriel Costela, Idade: 32, Sexo: M, CPF:  04963217570, Prioridade: 3, Atendido: 0] no índice "PAC038"
+[INFO] Paciente inserido: [ID: PAC039, Nome: Luiz Miguel Santos, Idade: 15, Sexo: M, CPF:  01853726435, Prioridade: 3, Atendido: 0] no índice "PAC039"
+[INFO] Paciente inserido: [ID: PAC040, Nome: Vitória Nogueira, Idade: 22, Sexo: F, CPF:  93057128432, Prioridade: 4, Atendido: 0] no índice "PAC040"
+[INFO] Paciente inserido: [ID: PAC041, Nome: Luiz Felipe Ferreira, Idade: 8, Sexo: M, CPF:  46873012904, Prioridade: 2, Atendido: 0] no índice "PAC041"
+[INFO] Paciente inserido: [ID: PAC042, Nome: Gustavo Henrique Melo, Idade: 90, Sexo: M, CPF:  09731682422, Prioridade: 1, Atendido: 0] no índice "PAC042"
+[INFO] Paciente inserido: [ID: PAC043, Nome: Arthur Rezende, Idade: 74, Sexo: M, CPF:  67083195277, Prioridade: 1, Atendido: 0] no índice "PAC043"
+[INFO] Paciente inserido: [ID: PAC044, Nome: Giovanna Cavalcanti, Idade: 16, Sexo: F, CPF:  85376042162, Prioridade: 5, Atendido: 0] no índice "PAC044"
+[INFO] Paciente inserido: [ID: PAC045, Nome: Marina Mendes, Idade: 74, Sexo: F, CPF:  14237098613, Prioridade: 4, Atendido: 0] no índice "PAC045"
+[INFO] Paciente inserido: [ID: PAC046, Nome: Isadora da Mota, Idade: 12, Sexo: F, CPF:  75106328462, Prioridade: 1, Atendido: 0] no índice "PAC046"
+[INFO] Paciente inserido: [ID: PAC047, Nome: Bryan Santos, Idade: 5, Sexo: M, CPF:  86401379278, Prioridade: 2, Atendido: 0] no índice "PAC047"
+[INFO] Paciente inserido: [ID: PAC048, Nome: Ana Clara Castro, Idade: 24, Sexo: F, CPF:  62093547180, Prioridade: 4, Atendido: 0] no índice "PAC048"
+[INFO] Paciente inserido: [ID: PAC049, Nome: Bruno Moraes, Idade: 27, Sexo: M, CPF:  19570246316, Prioridade: 1, Atendido: 0] no índice "PAC049"
+[INFO] Paciente inserido: [ID: PAC050, Nome: João Guilherme Cardoso, Idade: 70, Sexo: M, CPF:  92301645851, Prioridade: 5, Atendido: 0] no índice "PAC050"
+[INFO] Carregamento dos pacientes finalizado.
+[INFO] Pilha criada com sucesso.
+------ Rodada 1-----
+[INFO] Paciente transferido do hashmap para o deque: Francisco Moraes
+[INFO] Paciente Francisco Moraes ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC015 (prioridade 5)
+[INFO] Nenhum paciente foi sorteado para alta
+[INFO] Nenhum paciente foi selecionado para alta. Encerrando processamento
+------ Rodada 2-----
+[INFO] Paciente transferido do hashmap para o deque: Fernanda Monteiro
+[INFO] Paciente Fernanda Monteiro ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC014 (prioridade 4)
+[INFO] Paciente Francisco Moraes liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC015 (Francisco Moraes)
+------ Rodada 3-----
+[INFO] Paciente transferido do hashmap para o deque: Manuela Ferreira
+[INFO] Paciente Manuela Ferreira ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC004 (prioridade 5)
+[INFO] Paciente Manuela Ferreira liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC004 (Manuela Ferreira)
+------ Rodada 4-----
+[INFO] Paciente transferido do hashmap para o deque: Luiz Miguel Santos
+[INFO] Paciente Luiz Miguel Santos ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC039 (prioridade 3)
+[INFO] Nenhum paciente foi sorteado para alta
+[INFO] Nenhum paciente foi selecionado para alta. Encerrando processamento
+------ Rodada 5-----
+[INFO] Paciente transferido do hashmap para o deque: Benício Castro
+[INFO] Paciente Benício Castro ocupado no leito 2
+[INFO] INTERNAÇÃO: PAC011 (prioridade 5)
+[INFO] Paciente Fernanda Monteiro liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC014 (Fernanda Monteiro)
+------ Rodada 6-----
+[INFO] Paciente transferido do hashmap para o deque: Emilly Cunha
+[INFO] Paciente Emilly Cunha ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC018 (prioridade 2)
+[INFO] Paciente Benício Castro liberado do leito 2
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC011 (Benício Castro)
+------ Rodada 7-----
+[INFO] Paciente transferido do hashmap para o deque: Sophie Peixoto
+[INFO] Paciente Sophie Peixoto ocupado no leito 2
+[INFO] INTERNAÇÃO: PAC001 (prioridade 1)
+[INFO] Paciente Emilly Cunha liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC018 (Emilly Cunha)
+------ Rodada 8-----
+[INFO] Paciente transferido do hashmap para o deque: Gustavo Henrique Melo
+[INFO] Paciente Gustavo Henrique Melo ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC042 (prioridade 1)
+[INFO] Paciente Luiz Miguel Santos liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC039 (Luiz Miguel Santos)
+------ Rodada 9-----
+[INFO] Paciente transferido do hashmap para o deque: Lucas Gabriel Barros
+[INFO] Paciente Lucas Gabriel Barros ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC022 (prioridade 1)
+[INFO] Nenhum paciente foi sorteado para alta
+[INFO] Nenhum paciente foi selecionado para alta. Encerrando processamento
+------ Rodada 10-----
+[INFO] Paciente transferido do hashmap para o deque: Ana Clara Castro
+[INFO] Paciente Ana Clara Castro ocupado no leito 3
+[INFO] INTERNAÇÃO: PAC048 (prioridade 4)
+[INFO] Paciente Sophie Peixoto liberado do leito 2
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC001 (Sophie Peixoto)
+------ Rodada 11-----
+[INFO] Paciente transferido do hashmap para o deque: Vitória Nogueira
+[INFO] Paciente Vitória Nogueira ocupado no leito 2
+[INFO] INTERNAÇÃO: PAC040 (prioridade 4)
+[INFO] Paciente Vitória Nogueira liberado do leito 2
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC040 (Vitória Nogueira)
+------ Rodada 12-----
+[INFO] Paciente transferido do hashmap para o deque: Beatriz Gomes
+[INFO] Paciente Beatriz Gomes ocupado no leito 2
+[INFO] INTERNAÇÃO: PAC002 (prioridade 4)
+[INFO] Paciente Ana Clara Castro liberado do leito 3
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC048 (Ana Clara Castro)
+------ Rodada 13-----
+[INFO] Paciente transferido do hashmap para o deque: Daniel da Costa
+[INFO] Paciente Daniel da Costa ocupado no leito 3
+[INFO] INTERNAÇÃO: PAC027 (prioridade 2)
+[INFO] Paciente Lucas Gabriel Barros liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC022 (Lucas Gabriel Barros)
+------ Rodada 14-----
+[INFO] Paciente transferido do hashmap para o deque: Ana Luiza Ribeiro
+[INFO] Paciente Ana Luiza Ribeiro ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC024 (prioridade 4)
+[INFO] Paciente Ana Luiza Ribeiro liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC024 (Ana Luiza Ribeiro)
+------ Rodada 15-----
+[INFO] Paciente transferido do hashmap para o deque: Luiz Miguel da Conceição
+[INFO] Paciente Luiz Miguel da Conceição ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC037 (prioridade 2)
+[INFO] Nenhum paciente foi sorteado para alta
+[INFO] Nenhum paciente foi selecionado para alta. Encerrando processamento
+------ Rodada 16-----
+[INFO] Paciente transferido do hashmap para o deque: Thomas Martins
+[INFO] Paciente Thomas Martins ocupado no leito 4
+[INFO] INTERNAÇÃO: PAC005 (prioridade 2)
+[INFO] Paciente Daniel da Costa liberado do leito 3
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC027 (Daniel da Costa)
+------ Rodada 17-----
+[INFO] Paciente transferido do hashmap para o deque: Isis Moreira
+[INFO] Paciente Isis Moreira ocupado no leito 3
+[INFO] INTERNAÇÃO: PAC035 (prioridade 1)
+[INFO] Paciente Gustavo Henrique Melo liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC042 (Gustavo Henrique Melo)
+------ Rodada 18-----
+[INFO] Paciente transferido do hashmap para o deque: João Guilherme Cardoso
+[INFO] Paciente João Guilherme Cardoso ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC050 (prioridade 5)
+[INFO] Paciente Thomas Martins liberado do leito 4
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC005 (Thomas Martins)
+------ Rodada 19-----
+[INFO] Paciente transferido do hashmap para o deque: Luiz Felipe Ferreira
+[INFO] Paciente Luiz Felipe Ferreira ocupado no leito 4
+[INFO] INTERNAÇÃO: PAC041 (prioridade 2)
+[INFO] Paciente Luiz Felipe Ferreira liberado do leito 4
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC041 (Luiz Felipe Ferreira)
+------ Rodada 20-----
+[INFO] Paciente transferido do hashmap para o deque: Bryan Santos
+[INFO] Paciente Bryan Santos ocupado no leito 4
+[INFO] INTERNAÇÃO: PAC047 (prioridade 2)
+[INFO] Paciente Beatriz Gomes liberado do leito 2
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC002 (Beatriz Gomes)
+------ Rodada 21-----
+[INFO] Paciente transferido do hashmap para o deque: Matheus Rocha
+[INFO] Paciente Matheus Rocha ocupado no leito 2
+[INFO] INTERNAÇÃO: PAC030 (prioridade 1)
+[INFO] Paciente João Guilherme Cardoso liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC050 (João Guilherme Cardoso)
+------ Rodada 22-----
+[INFO] Paciente transferido do hashmap para o deque: Sofia Peixoto
+[INFO] Paciente Sofia Peixoto ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC019 (prioridade 1)
+[INFO] Paciente Sofia Peixoto liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC019 (Sofia Peixoto)
+------ Rodada 23-----
+[INFO] Paciente transferido do hashmap para o deque: Francisco da Cunha
+[INFO] Paciente Francisco da Cunha ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC033 (prioridade 5)
+[INFO] Paciente Luiz Miguel da Conceição liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC037 (Luiz Miguel da Conceição)
+------ Rodada 24-----
+[INFO] Paciente transferido do hashmap para o deque: Eduarda da Rosa
+[INFO] Paciente Eduarda da Rosa ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC009 (prioridade 3)
+[INFO] Paciente Francisco da Cunha liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC033 (Francisco da Cunha)
+------ Rodada 25-----
+[INFO] Paciente transferido do hashmap para o deque: Isaac da Costa
+[INFO] Paciente Isaac da Costa ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC031 (prioridade 5)
+[INFO] Paciente Isaac da Costa liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC031 (Isaac da Costa)
+------ Rodada 26-----
+[INFO] Paciente transferido do hashmap para o deque: Luna Martins
+[INFO] Paciente Luna Martins ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC036 (prioridade 4)
+[INFO] Paciente Eduarda da Rosa liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC009 (Eduarda da Rosa)
+------ Rodada 27-----
+[INFO] Paciente transferido do hashmap para o deque: Isadora da Mota
+[INFO] Paciente Isadora da Mota ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC046 (prioridade 1)
+[INFO] Paciente Isadora da Mota liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC046 (Isadora da Mota)
+------ Rodada 28-----
+[INFO] Paciente transferido do hashmap para o deque: Rafaela Peixoto
+[INFO] Paciente Rafaela Peixoto ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC020 (prioridade 5)
+[INFO] Paciente Rafaela Peixoto liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC020 (Rafaela Peixoto)
+------ Rodada 29-----
+[INFO] Paciente transferido do hashmap para o deque: Enrico Alves
+[INFO] Paciente Enrico Alves ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC023 (prioridade 5)
+[INFO] Paciente Matheus Rocha liberado do leito 2
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC030 (Matheus Rocha)
+------ Rodada 30-----
+[INFO] Paciente transferido do hashmap para o deque: Marina Mendes
+[INFO] Paciente Marina Mendes ocupado no leito 2
+[INFO] INTERNAÇÃO: PAC045 (prioridade 4)
+[INFO] Paciente Luna Martins liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC036 (Luna Martins)
+------ Rodada 31-----
+[INFO] Paciente transferido do hashmap para o deque: Luana da Rocha
+[INFO] Paciente Luana da Rocha ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC013 (prioridade 5)
+[INFO] Paciente Bryan Santos liberado do leito 4
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC047 (Bryan Santos)
+------ Rodada 32-----
+[INFO] Paciente transferido do hashmap para o deque: Ana Laura Nogueira
+[INFO] Paciente Ana Laura Nogueira ocupado no leito 4
+[INFO] INTERNAÇÃO: PAC007 (prioridade 3)
+[INFO] Paciente Isis Moreira liberado do leito 3
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC035 (Isis Moreira)
+------ Rodada 33-----
+[INFO] Paciente transferido do hashmap para o deque: Noah Pires
+[INFO] Paciente Noah Pires ocupado no leito 3
+[INFO] INTERNAÇÃO: PAC016 (prioridade 2)
+[INFO] Paciente Ana Laura Nogueira liberado do leito 4
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC007 (Ana Laura Nogueira)
+------ Rodada 34-----
+[INFO] Paciente transferido do hashmap para o deque: Ana Clara Carvalho
+[INFO] Paciente Ana Clara Carvalho ocupado no leito 4
+[INFO] INTERNAÇÃO: PAC008 (prioridade 3)
+[INFO] Paciente Marina Mendes liberado do leito 2
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC045 (Marina Mendes)
+------ Rodada 35-----
+[INFO] Paciente transferido do hashmap para o deque: Maria Sales
+[INFO] Paciente Maria Sales ocupado no leito 2
+[INFO] INTERNAÇÃO: PAC026 (prioridade 3)
+[INFO] Paciente Luana da Rocha liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC013 (Luana da Rocha)
+------ Rodada 36-----
 [INFO] Paciente transferido do hashmap para o deque: Luiz Felipe Novaes
+[INFO] Paciente Luiz Felipe Novaes ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC034 (prioridade 4)
+[INFO] Paciente Luiz Felipe Novaes liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC034 (Luiz Felipe Novaes)
+------ Rodada 37-----
+[INFO] Paciente transferido do hashmap para o deque: Gabriel da Cruz
+[INFO] Paciente Gabriel da Cruz ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC028 (prioridade 4)
+[INFO] Paciente Maria Sales liberado do leito 2
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC026 (Maria Sales)
+------ Rodada 38-----
+[INFO] Paciente transferido do hashmap para o deque: Enzo Gabriel Costela
+[INFO] Paciente Enzo Gabriel Costela ocupado no leito 2
+[INFO] INTERNAÇÃO: PAC038 (prioridade 3)
+[INFO] Paciente Enrico Alves liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC023 (Enrico Alves)
+------ Rodada 39-----
+[INFO] Paciente transferido do hashmap para o deque: Bruno Moraes
+[INFO] Paciente Bruno Moraes ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC049 (prioridade 1)
+[INFO] Paciente Gabriel da Cruz liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC028 (Gabriel da Cruz)
+------ Rodada 40-----
+[INFO] Paciente transferido do hashmap para o deque: Giovanna Cavalcanti
+[INFO] Paciente Giovanna Cavalcanti ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC044 (prioridade 5)
+[INFO] Paciente Ana Clara Carvalho liberado do leito 4
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC008 (Ana Clara Carvalho)
+------ Rodada 41-----
+[INFO] Paciente transferido do hashmap para o deque: Maria Sophia Melo
+[INFO] Paciente Maria Sophia Melo ocupado no leito 4
+[INFO] INTERNAÇÃO: PAC010 (prioridade 5)
+[INFO] Paciente Giovanna Cavalcanti liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC044 (Giovanna Cavalcanti)
+------ Rodada 42-----
+[INFO] Paciente transferido do hashmap para o deque: Caroline Costa
+[INFO] Paciente Caroline Costa ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC012 (prioridade 5)
+[INFO] Paciente Bruno Moraes liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC049 (Bruno Moraes)
+------ Rodada 43-----
+[INFO] Paciente transferido do hashmap para o deque: Davi Lucas Freitas
+[INFO] Paciente Davi Lucas Freitas ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC025 (prioridade 3)
+[INFO] Paciente Davi Lucas Freitas liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC025 (Davi Lucas Freitas)
+------ Rodada 44-----
+[INFO] Paciente transferido do hashmap para o deque: Calebe Jesus
+[INFO] Paciente Calebe Jesus ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC006 (prioridade 5)
+[INFO] Paciente Maria Sophia Melo liberado do leito 4
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC010 (Maria Sophia Melo)
+------ Rodada 45-----
+[INFO] Paciente transferido do hashmap para o deque: Arthur Rezende
+[INFO] Paciente Arthur Rezende ocupado no leito 4
+[INFO] INTERNAÇÃO: PAC043 (prioridade 1)
+[INFO] Paciente Caroline Costa liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC012 (Caroline Costa)
+------ Rodada 46-----
+[INFO] Paciente transferido do hashmap para o deque: Mirella Fernandes
+[INFO] Paciente Mirella Fernandes ocupado no leito 1
+[INFO] INTERNAÇÃO: PAC017 (prioridade 1)
+[INFO] Paciente Arthur Rezende liberado do leito 4
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC043 (Arthur Rezende)
+------ Rodada 47-----
+[INFO] Paciente transferido do hashmap para o deque: Samuel da Cruz
+[INFO] Paciente Samuel da Cruz ocupado no leito 4
+[INFO] INTERNAÇÃO: PAC021 (prioridade 3)
+[INFO] Paciente Enzo Gabriel Costela liberado do leito 2
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC038 (Enzo Gabriel Costela)
+------ Rodada 48-----
+[INFO] Paciente transferido do hashmap para o deque: Ana Beatriz Lima
+[INFO] Paciente Ana Beatriz Lima ocupado no leito 2
+[INFO] INTERNAÇÃO: PAC029 (prioridade 2)
+[INFO] Paciente Calebe Jesus liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC006 (Calebe Jesus)
+------ Rodada 49-----
+[INFO] Paciente transferido do hashmap para o deque: Nina Melo
+[INFO] Paciente Nina Melo ocupado no leito 0
+[INFO] INTERNAÇÃO: PAC003 (prioridade 3)
+[INFO] Paciente Noah Pires liberado do leito 3
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC016 (Noah Pires)
+------ Rodada 50-----
+[INFO] Paciente transferido do hashmap para o deque: Caio Novaes
+[INFO] Paciente Caio Novaes ocupado no leito 3
+[INFO] INTERNAÇÃO: PAC032 (prioridade 2)
+[INFO] Paciente Ana Beatriz Lima liberado do leito 2
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC029 (Ana Beatriz Lima)
+------ Rodada 51-----
+[INFO] Não há mais pacientes para transferir do hashmap.
+[INFO] Fila de espera está vazia. Encerrando processamento.
+[INFO] Paciente Mirella Fernandes liberado do leito 1
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC017 (Mirella Fernandes)
+------ Rodada 52-----
+[INFO] Não há mais pacientes para transferir do hashmap.
+[INFO] Fila de espera está vazia. Encerrando processamento.
+[INFO] Paciente Samuel da Cruz liberado do leito 4
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC021 (Samuel da Cruz)
+------ Rodada 53-----
+[INFO] Não há mais pacientes para transferir do hashmap.
+[INFO] Fila de espera está vazia. Encerrando processamento.
+[INFO] Paciente Nina Melo liberado do leito 0
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC003 (Nina Melo)
+------ Rodada 54-----
+[INFO] Não há mais pacientes para transferir do hashmap.
+[INFO] Fila de espera está vazia. Encerrando processamento.
+[INFO] Paciente Caio Novaes liberado do leito 3
+[INFO] Elemento empilhado com sucesso.
+[INFO] ALTA: PAC032 (Caio Novaes)
+------ Rodada 55-----
+[INFO] Não há mais pacientes para transferir do hashmap.
+[INFO] Fila de espera está vazia. Encerrando processamento.
+[INFO] Leitos estão vazios. Encerrando processamento
+[INFO] Finalizando ciclos. Gerenciadores ociosos
