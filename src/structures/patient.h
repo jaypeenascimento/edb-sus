@@ -5,13 +5,13 @@
 #include <stdio.h>
 
 typedef struct Patient {
-  char *id;
-  char *name;
-  int age;
-  char gender;
-  char *cpf;
-  int priority;
-  int attended;
+    char *id;
+    char *name;
+    int age;
+    char gender;
+    char *cpf;
+    int priority;
+    int attended;
 } Patient;
 
 Patient *createPatient(const char *id, const char *name, int age, char gender,

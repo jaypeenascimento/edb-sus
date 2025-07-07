@@ -1,17 +1,18 @@
 #ifndef HASHMAP_H
 #define HASHMAP_H
 
-#include "../commons.h"
-#include "linkedlist.h"
 #include <stdio.h>
 
+#include "../commons.h"
+#include "linkedlist.h"
+
 typedef struct HashMapValue {
-  char *key;
-  void *data;
+    char *key;
+    void *data;
 } HashMapValue;
 
 typedef struct HashMap {
-  LinkedList *data[TABLE_SIZE];
+    LinkedList *data[TABLE_SIZE];
 } HashMap;
 
 HashMap *hashmapCreate();
