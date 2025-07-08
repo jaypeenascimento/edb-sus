@@ -7,7 +7,7 @@ Stack *stackCreate() {
 
     if (stack) {
         stack->list = linkedlistCreate();
-        logMessage("[INFO] Pilha criada com sucesso.");
+        // logMessage("[INFO] Pilha criada com sucesso.");
     } else {
         logMessage("[ERROR] Erro ao criar a pilha.");
     }
@@ -31,8 +31,6 @@ void stackPush(Stack *stack, void *data) {
     node->data = data;
     node->next = stack->list->head;
     stack->list->head = node;
-
-    logMessage("[INFO] Elemento empilhado com sucesso.");
 }
 
 void *stackPop(Stack *stack) {

@@ -26,6 +26,9 @@ int main() {
 
     while (1) {
         logMessage("------ Rodada %d-----", round);
+        bool blreturn = BedlistManagerProcess(bl, ctx);
+        bool wlreturn = waitlistManagerProcess(wl, ctx);
+
         Patient *randomPatient = patientDataManagerGetRandomPatient(hashmap);
 
         if (randomPatient) {
@@ -34,21 +37,19 @@ int main() {
             if (waitlistManagerCanInsert(wl)) {
                 waitlistManagerInsertPatient(wl, randomPatient);
                 logMessage(
-                    "[INFO] Paciente transferido do hashmap para o deque: %s",
-                    randomPatient->name);
+                    "ESPERA - %s (prioridade %d)",
+                    randomPatient->id, randomPatient->priority);
                 patientRemove(hashmap, randomPatient->id);
             }
         } else {
-            logMessage(
-                "[INFO] Não há mais pacientes para transferir do hashmap.");
+            // logMessage(
+                // "[INFO] Não há mais pacientes para transferir do hashmap.");
         }
 
-        bool wlreturn = waitlistManagerProcess(wl, ctx);
-        bool blreturn = BedlistManagerProcess(bl, ctx);
 
-        sleep(2);
+        sleep(0);
 
-        if (!(wlreturn || blreturn)) {
+        if (!(wlreturn || blreturn || randomPatient != NULL)) {
             logMessage("[INFO] Finalizando ciclos. Gerenciadores ociosos");
             break;
         }

@@ -61,15 +61,18 @@ void BedlistManagerOccupyBed(BedlistManager *manager, Patient *p) {
         return;
     }
 
+    int randomIndex = rand() % MAX_BEDLIST_SIZE;
     for (int i = 0; i < MAX_BEDLIST_SIZE; i++) {
+        i = (randomIndex + i) % MAX_BEDLIST_SIZE;
+
         if (manager->bedlist[i] == NULL) {
             manager->bedlist[i] = p;
-            logMessage("[INFO] Paciente %s ocupado no leito %d", p->name, i);
+            // logMessage("[INFO] Paciente %s ocupado no leito %d", p->name, i);
             return;
         }
     }
 
-    logMessage("[ERROR] Não há leitos disponíveis para o paciente %s", p->name);
+    // logMessage("[ERROR] Não há leitos disponíveis para o paciente %s", p->name);
 }
 
 Patient *BedlistManagerDischargeRandomPatient(BedlistManager *manager) {
@@ -78,7 +81,7 @@ Patient *BedlistManagerDischargeRandomPatient(BedlistManager *manager) {
     }
 
     if (_checkBlIsEmpty(manager)) {
-        logMessage("[ERROR] Não há pacientes para liberar");
+        // logMessage("[ERROR] Não há pacientes para liberar");
         return NULL;
     }
 
@@ -88,13 +91,13 @@ Patient *BedlistManagerDischargeRandomPatient(BedlistManager *manager) {
         if (manager->bedlist[randomIndex] != NULL) {
             Patient *p = manager->bedlist[randomIndex];
             manager->bedlist[randomIndex] = NULL;
-            logMessage("[INFO] Paciente %s liberado do leito %d", p->name,
-                       randomIndex);
+            // logMessage("[INFO] Paciente %s liberado do leito %d", p->name,
+            //            randomIndex);
             return p;
         }
     }
 
-    logMessage("[INFO] Nenhum paciente foi sorteado para alta");
+    // logMessage("[INFO] Nenhum paciente foi sorteado para alta");
     return NULL;
 }
 
@@ -112,8 +115,8 @@ bool BedlistManagerProcess(BedlistManager *manager, ManagerContext *ctx) {
 
     Patient *p = BedlistManagerDischargeRandomPatient(manager);
     if (!p) {
-        logMessage("[INFO] Nenhum paciente foi selecionado para alta. "
-                   "Encerrando processamento");
+        // logMessage("[INFO] Nenhum paciente foi selecionado para alta. "
+        //            "Encerrando processamento");
         return false;
     }
     dischargeManagerDischargePatient(ctx->dischargeManager, p);

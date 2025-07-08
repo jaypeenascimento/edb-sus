@@ -33,7 +33,7 @@ void dischargeManagerDischargePatient(DischargeManager *manager, Patient *p) {
     }
 
     stackPush(manager->dischargeStack, p);
-    logMessage("[INFO] ALTA: %s (%s)", p->id, p->name);
+    logMessage("ALTA - %s (%s)", p->id, p->name);
 
     p->attended = 1;
 }
